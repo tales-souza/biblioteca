@@ -6,7 +6,6 @@ package view;
 
 import conf.Conexao;
 import data.TabelaAlunos;
-;
 import data.TabelaLivros;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -34,7 +33,7 @@ public class FormCadastroAlunos extends javax.swing.JFrame {
         conexao = new Conexao();        
         stmt = conexao.getConexao().createStatement();
         
-        
+        tabelaAlunos = new TabelaAlunos(select());
                 
 
         initComponents();
